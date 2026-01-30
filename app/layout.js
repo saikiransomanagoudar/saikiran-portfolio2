@@ -3,7 +3,7 @@ import {Analytics} from '@vercel/analytics/react'
 
 export const metadata = {
   title: 'Portfolio',
-  description: "Bill Zhang's Portfolio Website",
+  description: "Saikiran Somanagoudar's Portfolio Website",
 }
 
 export default function RootLayout({children}) {
