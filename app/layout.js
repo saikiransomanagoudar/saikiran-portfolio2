@@ -2,7 +2,7 @@ import './globals.css'
 import {Analytics} from '@vercel/analytics/react'
 
 export const metadata = {
-  title: 'Portfolio',
+  title: 'Saikiran | Portfolio',
   description: "Saikiran Somanagoudar's Portfolio Website",
 }
 
