@@ -4,7 +4,7 @@
     "description": "A software engineer with 4+ years crafting responsive web experiences and a Master's in CS from IIT. With a stack spanning React, Next.js, and AWS, I build scalable applications from frontend to cloud. Dive into my journey where clean code meets creative problem-solving!",
     "linkedin": "https://www.linkedin.com/in/saikiransomanagoudar/",
     "github": "https://github.com/saikiransomanagoudar",
-    "devpost": "https://devpost.com/IdkwhatImD0ing/"
+    "devpost": "https://devpost.com/saikiransomanagoudar"
   },
   "education": [
     {
@@ -24,6 +24,32 @@
       "major": "Master's in Computer Science",
       "dates": "2023-2025",
       "logo": "/ILTECH_red_stacked.png"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "CrowdDoing",
+      "location": "Chicago, IL",
+      "dates": "October 2025 - Present",
+      "responsibilities": [
+        "Developed new interactive UI components and features for the AIME/Imagination Project web application using React, creating reusable component libraries that improved team workflow efficiency by 30%",
+        "Built responsive data visualization dashboards integrating Django backend APIs, implementing efficient state management and data fetching that reduced rendering time by 40% and enhanced user experience for research teams",
+        "Enhanced application performance by 25% through frontend optimization techniques including code splitting, lazy loading, and concurrent rendering improvements while implementing automated testing pipelines and Docker-based CI/CD processes to ensure consistent quality standards"
+      ]
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Wipro Technologies",
+      "location": "Bengaluru, India",
+      "dates": "September 2019 - June 2023",
+      "responsibilities": [
+        "Spearheaded the migration of 30+ client-facing applications to AWS hybrid cloud, optimizing responsive design and frontend performance to reduce downtime by 25% and enhance user experience across multiple platforms",
+        "Built and deployed interactive single-page application components using React with advanced state management and asynchronous process handling, reducing page load times by 15% and improving overall application performance",
+        "Integrated AI-powered AWS CodeGuru to automate CI/CD workflows and code review processes for multiple web applications, reducing manual intervention by 50% and improving deployment reliability",
+        "Engineered UI/UX enhancements for enterprise React web applications rendering implementation, optimizing component rendering efficiency, increasing average user session duration by 20% while reducing bounce rates",
+        "Collaborated with product stakeholders following agile methodologies to gather requirements and translate them into technical specifications, conducting comprehensive unit and integration tests while participating in code reviews to maintain quality standards"
+      ]
     }
   ],
   "projects": [
@@ -47,11 +73,9 @@
   "skills": {
     "languages": [
       ["JavaScript", "100%"],
+      ["TypeScript", "95%"],
       ["Python", "95%"],
-      ["C/C++", "90%"],
-      ["Java", "70%"],
-      ["Dart", "60%"],
-      ["Haskell", "50%"]
+      ["Java", "80%"]
     ],
     "frameworks": [
       ["React", "100%"],

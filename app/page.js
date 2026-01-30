@@ -4,6 +4,7 @@ import {Box, useMediaQuery, useTheme} from '@mui/material'
 import Projects from '@/components/Projects/page'
 import {CustomModeThemeProvider} from './theme'
 import Education from '@/components/Education/page'
+import Experience from '@/components/Experience/page'
 import Skills from '@/components/Skills/page'
 import Resume from '@/components/Resume/page'
 import Header from '@/components/Header/header'
@@ -39,6 +40,7 @@ export default function Home() {
               <Hero />
               <Projects />
               <Education />
+              <Experience />
               <Skills />
               <Resume />
               <Header position="bottom" />
