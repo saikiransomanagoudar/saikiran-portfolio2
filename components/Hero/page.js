@@ -4,6 +4,7 @@ import {useState, useEffect, useRef} from 'react'
 import UserProfile from '../profile'
 import Line from './line'
 import Contact from './contact'
+import RoleHighlighter from './RoleHighlighter'
 import {motion} from 'framer-motion'
 
 const MotionAvatar = motion(Avatar)
@@ -69,6 +70,15 @@ const Hero = () => {
           >
             {UserProfile.profile.description}
           </DescriptionTypography>
+          <Box
+            component={motion.div}
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+            transition={{duration: 0.5, delay: 1.2}}
+          >
+            <RoleHighlighter />
+          </Box>
           <MotionButton
             variant="contained"
             onClick={handleOpen} // Opens the modal when clicked
