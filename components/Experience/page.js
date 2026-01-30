@@ -13,7 +13,7 @@ const Experience = () => {
   const isMobile = useMediaQuery('(max-width: 600px)')
   const controls = useAnimation()
   const ref = useRef(null)
-  const inView = useInView(ref)
+  const inView = useInView(ref, {once: true, amount: 0.2})
 
   useEffect(() => {
     if (inView) {

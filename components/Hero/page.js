@@ -27,7 +27,7 @@ const Hero = () => {
       display="flex"
       flexDirection="column"
       alignItems="center"
-      justifyContent="center"
+      justifyContent={isMobile ? 'flex-start' : 'center'}
       position="relative"
       bgcolor="background.default"
       ref={ref}
@@ -38,7 +38,7 @@ const Hero = () => {
         width="100%"
         justifyContent="space-between"
         alignItems="center"
-        spacing={isMobile ? 2 : 10}
+        spacing={isMobile ? 4 : 10}
         as={motion.div}
         initial="hidden"
         animate="visible"
@@ -99,8 +99,9 @@ const Hero = () => {
           alt="profile"
           src={'/profile.png'}
           sx={{
-            width: '300px',
-            height: '300px',
+            width: isMobile ? '250px' : '300px',
+            height: isMobile ? '250px' : '300px',
+            marginTop: isMobile ? '2rem' : '0',
           }}
           initial="hidden"
           animate="visible"

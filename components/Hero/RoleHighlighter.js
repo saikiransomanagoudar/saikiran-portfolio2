@@ -26,6 +26,7 @@ const RoleHighlighter = () => {
       sx={{
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'flex-start',
         minHeight: '40px',
       }}
     >
@@ -59,8 +60,11 @@ const RoleHighlighter = () => {
             style={{
               position: 'absolute',
               left: 0,
-              top: '2px',
+              top: 0,
               width: '100%',
+              display: 'flex',
+              alignItems: 'center',
+              height: '100%',
             }}
           >
             <Typography
