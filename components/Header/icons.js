@@ -1,7 +1,8 @@
 import UserProfile from '@/components/profile'
-import DevpostIcon from '@/public/devpost.svg'
+// import DevpostIcon from '@/public/devpost.svg'
 import GithubIcon from '@/public/github.svg'
 import LinkedInIcon from '@/public/linkedin.svg'
+// import YoutubeIcon from '@public/youtube.svg'
 import {Stack} from '@mui/material'
 import Image from 'next/image'
 import {useEffect} from 'react'
@@ -72,6 +73,18 @@ const LinkIcons = ({inView}) => {
           width={IconSize}
         />
       </a>
+      {/* <a
+        href={UserProfile.profile.youtube}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          src={YoutubeIcon}
+          alt="YouTube"
+          height={IconSize}
+          width={IconSize}
+        />
+      </a> */}
     </MotionStack>
   )
 }

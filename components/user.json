@@ -8,10 +8,10 @@
   },
   "education": [
     {
-      "schoolName": "Illinois Institute of Technology",
-      "major": "Master's in Computer Science",
-      "dates": "2023-2025",
-      "logo": "/iltech.png"
+      "schoolName": "Jawahar Navodaya Vidyalaya",
+      "major": "High School",
+      "dates": "2008-2015",
+      "logo": "/navodaya.png"
     },
     {
       "schoolName": "Reva University",
@@ -20,10 +20,10 @@
       "logo": "/reva.png"
     },
     {
-      "schoolName": "Jawahar Navodaya Vidyalaya",
-      "major": "High School",
-      "dates": "2008-2015",
-      "logo": "/navodaya.png"
+      "schoolName": "Illinois Institute of Technology",
+      "major": "Master's in Computer Science",
+      "dates": "2023-2025",
+      "logo": "/iltech.png"
     }
   ],
   "experience": [
@@ -87,32 +87,32 @@
   ],
   "skills": {
     "languages": [
-      ["JavaScript", "95%"],
+      ["JavaScript", "100%"],
       ["TypeScript", "90%"],
-      ["Python", "92%"],
-      ["Java", "85%"],
-      ["HTML", "98%"],
-      ["CSS", "95%"]
+      ["Python", "95%"],
+      ["Java", "90%"],
+      ["HTML", "100%"],
+      ["CSS", "100%"]
     ],
     "frontend": [
-      ["React.js", "95%"],
+      ["React.js", "100%"],
       ["Next.js", "90%"],
-      ["Redux", "88%"],
-      ["Tailwind CSS", "92%"]
+      ["Redux", "90%"],
+      ["Tailwind CSS", "100%"]
     ],
     "backend": [
-      ["Node.js", "90%"],
+      ["Node.js", "100%"],
       ["Django", "85%"],
-      ["Flask", "88%"],
-      ["FastAPI", "87%"],
-      ["RESTful APIs", "93%"],
-      ["GraphQL", "82%"]
+      ["Flask", "85%"],
+      ["FastAPI", "90%"],
+      ["RESTful APIs", "100%"],
+      ["GraphQL", "80%"]
     ],
     "databases": [
       ["PostgreSQL", "85%"],
-      ["MySQL", "83%"],
-      ["MongoDB", "87%"],
-      ["Redis", "80%"]
+      ["MySQL", "90%"],
+      ["MongoDB", "100%"],
+      ["Redis", "100%"]
     ],
     "cloud": [
       ["AWS (EC2, S3)", "88%"],
@@ -120,15 +120,15 @@
       ["CloudFront", "80%"],
       ["CodeGuru", "78%"],
       ["Docker", "85%"],
-      ["Jenkins", "83%"],
+      ["Jenkins", "85%"],
       ["Kubernetes", "80%"],
       ["Vercel", "100%"],
       ["Heroku", "100%"]
     ],
     "tools": [
-      ["Git", "95%"],
-      ["Jest", "88%"],
-      ["LangChain", "85%"]
+      ["Git", "100%"],
+      ["Jest", "85%"],
+      ["LangChain", "90%"]
     ]
   }
 }
