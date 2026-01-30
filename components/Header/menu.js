@@ -95,6 +95,7 @@ const FullScreenMenu = () => {
       }}
     >
       {[
+        'experience-section',
         'projects-section',
         'education-section',
         'skills-section',

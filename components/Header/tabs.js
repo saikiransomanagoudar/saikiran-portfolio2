@@ -26,6 +26,10 @@ const scrollToSection = (sectionId) => {
 
 const Tabs = () => (
   <Stack direction="row" spacing={2} alignItems="center">
+    <StyledTypography onClick={() => scrollToSection('experience-section')}>
+      Experience
+    </StyledTypography>
+    <StyledTypography>/</StyledTypography>
     <StyledTypography onClick={() => scrollToSection('projects-section')}>
       Projects
     </StyledTypography>
