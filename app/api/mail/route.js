@@ -1,81 +1,73 @@
 import fetch from 'node-fetch'
+import nodemailer from 'nodemailer'
 
 export async function POST(request) {
   // Parse the request body
-
   const {name, email, message, captchaToken} = await request.json()
-  const apiKey = process.env.MAILGUN_API_KEY
-  const domain = 'billzhang.tech'
-  const mgDomain = 'mg.billzhang.tech' // Replace with your domain
-  const mailgunUrl = `https://api.mailgun.net/v3/${mgDomain}/messages`
 
+  // Validate inputs
+  if (!name || !email || !message) {
+    return Response.json(
+      {error: 'Please fill all the fields!'},
+      {status: 400}
+    )
+  }
+
+  // Verify captcha
   try {
     await verifyCaptcha(captchaToken)
   } catch (error) {
     return Response.json(
       {error: 'Failed Captcha'},
-      {
-        status: 400,
-      },
+      {status: 400}
     )
   }
 
-  const formDataOne = new URLSearchParams()
-  formDataOne.append('from', `Bill Zhang <no-reply@${domain}>`)
-  formDataOne.append('to', 'billzhangsc@gmail.com')
-  formDataOne.append('subject', 'New Contact Request')
-  formDataOne.append(
-    'text',
-    `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-  )
-
-  const formDataTwo = new URLSearchParams()
-  formDataTwo.append('from', `Bill Zhang <no-reply@${domain}>`)
-  formDataTwo.append('to', email)
-  formDataTwo.append('subject', 'Your message has been sent')
-  formDataTwo.append(
-    'text',
-    `Hi ${name},\n\nThank you for contacting me! I will get back to you as soon as possible.\n\nBest,\nBill`,
-  )
+  // Create nodemailer transporter
+  const transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    port: 465,
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASSWORD,
+    },
+  })
 
   try {
-    // Email sent to your address
-    const response = await fetch(mailgunUrl, {
-      method: 'POST',
-      headers: {
-        Authorization: `Basic ${Buffer.from(`api:${apiKey}`).toString(
-          'base64',
-        )}`,
-      },
-      body: formDataOne,
+    // Email to yourself with contact details
+    await transporter.sendMail({
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_USER,
+      subject: `New Contact Request from ${name}`,
+      html: `
+        <h3>Sender Information</h3>
+        <ul>
+          <li>Name: ${name}</li>
+          <li>Email: ${email}</li>
+        </ul>
+        <h3>Message</h3>
+        <p>${message}</p>
+      `,
     })
 
-    if (!response.ok) {
-      throw new Error('An error occurred while sending the email')
-    }
-
-    // Email sent to the user
-    const responseTwo = await fetch(mailgunUrl, {
-      method: 'POST',
-      headers: {
-        Authorization: `Basic ${Buffer.from(`api:${apiKey}`).toString(
-          'base64',
-        )}`,
-      },
-      body: formDataTwo,
+    // Confirmation email to the sender
+    await transporter.sendMail({
+      from: process.env.EMAIL_USER,
+      to: email,
+      subject: 'Your message has been sent',
+      html: `
+        <p>Hi ${name},</p>
+        <p>Thank you for contacting me! I will get back to you as soon as possible.</p>
+        <p>Best,<br/>Saikiran</p>
+      `,
     })
-
-    if (!responseTwo.ok) {
-      throw new Error('An error occurred while sending the confirmation email')
-    }
 
     return Response.json({message: 'Message sent successfully'})
   } catch (error) {
+    console.error('Error sending email:', error)
     return Response.json(
       {error: 'An error occurred while sending the email'},
-      {
-        status: 500,
-      },
+      {status: 500}
     )
   }
 }
