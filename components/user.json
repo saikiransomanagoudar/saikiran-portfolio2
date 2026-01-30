@@ -8,10 +8,10 @@
   },
   "education": [
     {
-      "schoolName": "Jawahar Navodaya Vidyalaya",
-      "major": "High School",
-      "dates": "2008-2015",
-      "logo": "/navodaya.png"
+      "schoolName": "Illinois Institute of Technology",
+      "major": "Master's in Computer Science",
+      "dates": "2023-2025",
+      "logo": "/iltech.png"
     },
     {
       "schoolName": "Reva University",
@@ -20,10 +20,10 @@
       "logo": "/reva.png"
     },
     {
-      "schoolName": "Illinois Institute of Technology",
-      "major": "Master's in Computer Science",
-      "dates": "2023-2025",
-      "logo": "/ILTECH_red_stacked.png"
+      "schoolName": "Jawahar Navodaya Vidyalaya",
+      "major": "High School",
+      "dates": "2008-2015",
+      "logo": "/navodaya.png"
     }
   ],
   "experience": [
@@ -34,8 +34,8 @@
       "dates": "October 2025 - Present",
       "responsibilities": [
         "Developed new interactive UI components and features for the AIME/Imagination Project web application using React, creating reusable component libraries that improved team workflow efficiency by 30%",
-        "Built responsive data visualization dashboards integrating Django backend APIs, implementing efficient state management and data fetching that reduced rendering time by 40% and enhanced user experience for research teams",
-        "Enhanced application performance by 25% through frontend optimization techniques including code splitting, lazy loading, and concurrent rendering improvements while implementing automated testing pipelines and Docker-based CI/CD processes to ensure consistent quality standards"
+        "Built responsive data visualization dashboards integrating Django backend APIs, implementing efficient state management and data fetching that reduced rendering time by 40% and enhanced user experience",
+        "Enhanced application performance by 25% through frontend optimization techniques including code splitting, lazy loading, and component rendering improvements while implementing automated testing pipelines and Docker-based CI/CD processes to ensure consistent quality standards"
       ]
     },
     {
@@ -47,7 +47,7 @@
         "Spearheaded the migration of 30+ client-facing applications to AWS hybrid cloud, optimizing responsive design and frontend performance to reduce downtime by 25% and enhance user experience across multiple platforms",
         "Built and deployed interactive single-page application components using React with advanced state management and asynchronous process handling, reducing page load times by 15% and improving overall application performance",
         "Integrated AI-powered AWS CodeGuru to automate CI/CD workflows and code review processes for multiple web applications, reducing manual intervention by 50% and improving deployment reliability",
-        "Engineered UI/UX enhancements for enterprise React web applications rendering implementation, optimizing component rendering efficiency, increasing average user session duration by 20% while reducing bounce rates",
+        "Engineered UI/UX enhancements for enterprise React web applications with server-side rendering implementation, optimizing component rendering efficiency, increasing average user session duration by 20% while reducing bounce rates",
         "Collaborated with product stakeholders following agile methodologies to gather requirements and translate them into technical specifications, conducting comprehensive unit and integration tests while participating in code reviews to maintain quality standards"
       ]
     }
@@ -67,47 +67,68 @@
       ],
       "link": "https://www.reddit.com/r/PlayGIFEnigma/",
       "github": "https://github.com/saikiransomanagoudar/gif-enigma"
+    },
+    {
+      "name": "Pantry Tracker",
+      "description": "Pantry Tracker is an inventory management application that helps users to keep track of their pantry items. Users can add, update, delete, and search for items in their pantry. The app includes user authentication features, allowing multiple users to securely track and manage their pantry inventory.",
+      "code": "srAL2mlq1Fo",
+      "techStack": [
+        "Next.js",
+        "JavaScript",
+        "Tailwind CSS",
+        "Node.js",
+        "Firebase",
+        "Firestore"
+      ],
+      "link": "https://pantry-tracker-saikiran.vercel.app/",
+      "github": "https://github.com/saikiransomanagoudar/pantry-tracker"
     }
     
   ],
   "skills": {
     "languages": [
-      ["JavaScript", "100%"],
-      ["TypeScript", "95%"],
-      ["Python", "95%"],
-      ["Java", "80%"]
+      ["JavaScript", "95%"],
+      ["TypeScript", "90%"],
+      ["Python", "92%"],
+      ["Java", "85%"],
+      ["HTML", "98%"],
+      ["CSS", "95%"]
     ],
-    "frameworks": [
-      ["React", "100%"],
-      ["NextJs", "90%"],
-      ["FastAPI", "90%"],
-      ["Flask", "85%"],
-      ["Express.Js", "80%"]
+    "frontend": [
+      ["React.js", "95%"],
+      ["Next.js", "90%"],
+      ["Redux", "88%"],
+      ["Tailwind CSS", "92%"]
+    ],
+    "backend": [
+      ["Node.js", "90%"],
+      ["Django", "85%"],
+      ["Flask", "88%"],
+      ["FastAPI", "87%"],
+      ["RESTful APIs", "93%"],
+      ["GraphQL", "82%"]
     ],
     "databases": [
-      ["Firebase", "100%"],
-      ["Redis", "90%"],
-      ["Milvus", "80%"],
-      ["PostgreSQL", "70%"],
-      ["Pinecone", "20%"]
+      ["PostgreSQL", "85%"],
+      ["MySQL", "83%"],
+      ["MongoDB", "87%"],
+      ["Redis", "80%"]
     ],
-    "libraries": [
-      ["Material UI", "100%"],
-      ["Tensorflow", "90%"],
-      ["Keras", "80%"],
-      ["Pandas", "70%"],
-      ["NumPy", "70%"],
-      ["Matplotlib", "60%"]
+    "cloud": [
+      ["AWS (EC2, S3)", "88%"],
+      ["Lambda", "82%"],
+      ["CloudFront", "80%"],
+      ["CodeGuru", "78%"],
+      ["Docker", "85%"],
+      ["Jenkins", "83%"],
+      ["Kubernetes", "80%"],
+      ["Vercel", "100%"],
+      ["Heroku", "100%"]
+    ],
+    "tools": [
+      ["Git", "95%"],
+      ["Jest", "88%"],
+      ["LangChain", "85%"]
     ]
-  },
-  "awards": [
-    {
-      "name": "Best Developer Award",
-      "date": "2020-11"
-    },
-    {
-      "name": "Innovative Solution Prize",
-      "date": "2019-09"
-    }
-  ]
+  }
 }
