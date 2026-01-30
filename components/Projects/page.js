@@ -88,7 +88,7 @@ const Projects = () => {
               <Project key={index} project={project} />
             </motion.div>
           ))}
-        <Box width="100%" display="flex" justifyContent="center" mt={2}>
+        {/* <Box width="100%" display="flex" justifyContent="center" mt={2}>
           <Button
             onClick={toggleShowAll}
             sx={{
@@ -106,7 +106,7 @@ const Projects = () => {
           >
             {showAll ? 'Less' : 'More'}
           </Button>
-        </Box>
+        </Box> */}
       </Stack>
     </Box>
   )

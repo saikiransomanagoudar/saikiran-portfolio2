@@ -26,6 +26,10 @@ const SkillCategory = ({category, skills}) => {
       alignContent="center"
       justifyContent="flex-start"
       ref={ref}
+      sx={{
+        minWidth: '250px',
+        flexShrink: 0,
+      }}
     >
       <TitleTypography
         component={motion.span}
