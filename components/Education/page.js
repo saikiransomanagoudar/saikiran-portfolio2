@@ -26,8 +26,8 @@ const Education = () => {
   const EducationDescriptions = () => (
     <Stack direction="column">
       {[
-        'Masters of Science in Computer Science',
-        'Full Stack Web Development, Applied Machine Learning',
+        'Master\'s in Computer Science',
+        'Frontend and Full Stack Web Development',
       ].map((text, i) => (
         <DescriptionTypography
           key={i}
