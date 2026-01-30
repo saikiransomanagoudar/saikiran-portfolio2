@@ -38,9 +38,9 @@ export default function Home() {
               <Header position="top" />
               {isMobile && <FullScreenMenu />}
               <Hero />
+              <Experience />
               <Projects />
               <Education />
-              <Experience />
               <Skills />
               <Resume />
               <Header position="bottom" />
