@@ -4,7 +4,7 @@ import Line from '../commons/line'
 import UserProfile from '../profile'
 import SkillCategory from './category'
 
-import {useRef, useEffect, useState} from 'react'
+import {useRef, useEffect, useState, useCallback} from 'react'
 import {motion, useAnimation, useInView} from 'framer-motion'
 import {
   slideFromLeftVariants,
@@ -48,7 +48,7 @@ const Skills = () => {
     setStartX(e.clientX)
   }
 
-  const handleSliderMouseMove = (e) => {
+  const handleSliderMouseMove = useCallback((e) => {
     if (!isDragging || !scrollContainerRef.current) return
     
     const container = scrollContainerRef.current
@@ -58,11 +58,11 @@ const Skills = () => {
     
     container.scrollLeft += scrollDelta
     setStartX(e.clientX)
-  }
+  }, [isDragging, startX])
 
-  const handleSliderMouseUp = () => {
+  const handleSliderMouseUp = useCallback(() => {
     setIsDragging(false)
-  }
+  }, [])
 
   useEffect(() => {
     if (isDragging) {
@@ -73,7 +73,7 @@ const Skills = () => {
         document.removeEventListener('mouseup', handleSliderMouseUp)
       }
     }
-  }, [isDragging, startX])
+  }, [isDragging, handleSliderMouseMove, handleSliderMouseUp])
   return (
     <Box
       width="100%"
