@@ -115,10 +115,7 @@
       ["Redis", "100%"]
     ],
     "cloud": [
-      ["AWS (EC2, S3)", "88%"],
-      ["Lambda", "82%"],
-      ["CloudFront", "80%"],
-      ["CodeGuru", "78%"],
+      ["AWS", "82%"],
       ["Docker", "85%"],
       ["Jenkins", "85%"],
       ["Kubernetes", "80%"],

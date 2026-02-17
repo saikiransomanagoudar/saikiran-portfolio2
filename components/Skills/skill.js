@@ -1,62 +1,61 @@
 import {Box, Stack} from '@mui/material'
 import {DescriptionTypography} from '../commons/commons'
-import AnimatedLinearProgress from './linearProgress'
+import {skillIcons, skillColors} from './iconMapping'
 
 import {motion, useAnimation} from 'framer-motion'
 import {useEffect} from 'react'
 
 const Skill = ({name, percentage, index, inView}) => {
-  const value = parseInt(percentage)
-
   const controls = useAnimation()
+  const IconComponent = skillIcons[name]
 
   useEffect(() => {
     if (inView) {
-      controls.start('visible') // Pass an object with the expected percentage
+      controls.start('visible')
     }
-  }, [controls, inView, value])
+  }, [controls, inView])
 
   return (
     <MotionStack
-      direction="column"
-      width="100%"
-      variants={skillVariants} // Use the defined variants
+      direction="row"
+      alignItems="center"
+      justifyContent="flex-start"
+      spacing={2}
+      variants={skillVariants}
       initial="hidden"
       animate={controls}
       custom={index}
+      sx={{
+        width: '100%',
+        padding: '8px 0',
+      }}
     >
+      {IconComponent && (
+        <Box
+          sx={{
+            fontSize: '40px',
+            color: skillColors[name] || 'text.primary',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            minWidth: '40px',
+            transition: 'transform 0.3s ease, color 0.3s ease',
+            '&:hover': {
+              transform: 'scale(1.15)',
+            },
+          }}
+        >
+          <IconComponent />
+        </Box>
+      )}
       <DescriptionTypography
         sx={{
-          fontSize: '18px',
+          fontSize: '16px',
+          lineHeight: 1.2,
         }}
       >
         {name}
       </DescriptionTypography>
-      <Box position="relative" width="100%">
-        <AnimatedLinearProgress
-          inView={inView}
-          targetValue={value}
-          index={index}
-        />
-        <Box
-          top={0}
-          left={0}
-          bottom={0}
-          right={0}
-          position="absolute"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <DescriptionTypography
-            sx={{
-              fontSize: '16px',
-            }}
-          >
-            {percentage}
-          </DescriptionTypography>
-        </Box>
-      </Box>
     </MotionStack>
   )
 }

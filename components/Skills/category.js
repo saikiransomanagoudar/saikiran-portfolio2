@@ -42,7 +42,12 @@ const SkillCategory = ({category, skills}) => {
       >
         {category[0].toUpperCase() + category.slice(1)}
       </TitleTypography>
-      <Stack direction="column" spacing={2} width="100%">
+      <Stack
+        direction="column"
+        spacing={2}
+        width="100%"
+        alignItems="flex-start"
+      >
         {skills.map((skill, index) => (
           <Skill
             inView={inView}
