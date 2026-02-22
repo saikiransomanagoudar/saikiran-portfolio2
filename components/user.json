@@ -122,10 +122,13 @@
       ["Vercel", "100%"],
       ["Heroku", "100%"]
     ],
-    "tools": [
+    "AI & Tools": [
       ["Git", "100%"],
       ["Jest", "85%"],
-      ["LangChain", "90%"]
+      ["LangChain", "90%"],
+      ["NLTK", "85%"],
+      ["Matplotlib", "85%"],
+      ["NumPy", "95%"]
     ]
   }
 }

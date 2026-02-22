@@ -24,9 +24,11 @@ import {
   SiHeroku,
   SiGit,
   SiJest,
+  SiNumpy,
 } from 'react-icons/si'
-import {FaJava, FaAws, FaServer} from 'react-icons/fa'
-import {GiChainLightning} from 'react-icons/gi'
+import {FaJava, FaAws, FaServer, FaChartBar} from 'react-icons/fa'
+import {GiChainLightning, _GiBrain} from 'react-icons/gi'
+import {TbTextGrammar} from 'react-icons/tb'
 
 // Map skill names to their corresponding icons
 export const skillIcons = {
@@ -70,6 +72,10 @@ export const skillIcons = {
   Git: SiGit,
   Jest: SiJest,
   LangChain: GiChainLightning,
+  NLTK: TbTextGrammar,
+  // spaCy: GiBrain,
+  Matplotlib: FaChartBar,
+  NumPy: SiNumpy,
 }
 
 // Color mapping for each skill icon
@@ -114,4 +120,8 @@ export const skillColors = {
   Git: '#F05032',
   Jest: '#C21325',
   LangChain: '#FFD700',
+  NLTK: '#4FC3F7',
+  // spaCy: '#09A3D5',
+  Matplotlib: '#11557C',
+  NumPy: '#4DABCF',
 }
