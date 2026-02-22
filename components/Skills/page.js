@@ -16,10 +16,10 @@ const Skills = () => {
   const controls = useAnimation() // Animation controls
   const ref = useRef(null) // Reference to the component
   const inView = useInView(ref) // Tracks whether component is in viewport
-  const scrollContainerRef = useRef(null)
-  const [scrollProgress, setScrollProgress] = useState(0)
-  const [isDragging, setIsDragging] = useState(false)
-  const [startX, setStartX] = useState(0)
+  // const scrollContainerRef = useRef(null)
+  // const [scrollProgress, setScrollProgress] = useState(0)
+  // const [isDragging, setIsDragging] = useState(false)
+  // const [startX, setStartX] = useState(0)
 
   useEffect(() => {
     if (inView) {
@@ -27,53 +27,53 @@ const Skills = () => {
     }
   }, [controls, inView])
 
-  useEffect(() => {
-    const container = scrollContainerRef.current
-    if (!container || isMobile) return
+  // useEffect(() => {
+  //   const container = scrollContainerRef.current
+  //   if (!container || isMobile) return
 
-    const handleScroll = () => {
-      const scrollWidth = container.scrollWidth - container.clientWidth
-      const progress = scrollWidth > 0 ? container.scrollLeft / scrollWidth : 0
-      setScrollProgress(progress)
-    }
+  //   const handleScroll = () => {
+  //     const scrollWidth = container.scrollWidth - container.clientWidth
+  //     const progress = scrollWidth > 0 ? container.scrollLeft / scrollWidth : 0
+  //     setScrollProgress(progress)
+  //   }
 
-    container.addEventListener('scroll', handleScroll)
-    handleScroll()
+  //   container.addEventListener('scroll', handleScroll)
+  //   handleScroll()
 
-    return () => container.removeEventListener('scroll', handleScroll)
-  }, [isMobile])
+  //   return () => container.removeEventListener('scroll', handleScroll)
+  // }, [isMobile])
 
-  const handleSliderMouseDown = (e) => {
-    setIsDragging(true)
-    setStartX(e.clientX)
-  }
+  // const handleSliderMouseDown = (e) => {
+  //   setIsDragging(true)
+  //   setStartX(e.clientX)
+  // }
 
-  const handleSliderMouseMove = useCallback((e) => {
-    if (!isDragging || !scrollContainerRef.current) return
-    
-    const container = scrollContainerRef.current
-    const sliderWidth = 200 // Width of the slider track
-    const deltaX = e.clientX - startX
-    const scrollDelta = (deltaX / sliderWidth) * (container.scrollWidth - container.clientWidth)
-    
-    container.scrollLeft += scrollDelta
-    setStartX(e.clientX)
-  }, [isDragging, startX])
+  // const handleSliderMouseMove = useCallback((e) => {
+  //   if (!isDragging || !scrollContainerRef.current) return
+  //   
+  //   const container = scrollContainerRef.current
+  //   const sliderWidth = 200 // Width of the slider track
+  //   const deltaX = e.clientX - startX
+  //   const scrollDelta = (deltaX / sliderWidth) * (container.scrollWidth - container.clientWidth)
+  //   
+  //   container.scrollLeft += scrollDelta
+  //   setStartX(e.clientX)
+  // }, [isDragging, startX])
 
-  const handleSliderMouseUp = useCallback(() => {
-    setIsDragging(false)
-  }, [])
+  // const handleSliderMouseUp = useCallback(() => {
+  //   setIsDragging(false)
+  // }, [])
 
-  useEffect(() => {
-    if (isDragging) {
-      document.addEventListener('mousemove', handleSliderMouseMove)
-      document.addEventListener('mouseup', handleSliderMouseUp)
-      return () => {
-        document.removeEventListener('mousemove', handleSliderMouseMove)
-        document.removeEventListener('mouseup', handleSliderMouseUp)
-      }
-    }
-  }, [isDragging, handleSliderMouseMove, handleSliderMouseUp])
+  // useEffect(() => {
+  //   if (isDragging) {
+  //     document.addEventListener('mousemove', handleSliderMouseMove)
+  //     document.addEventListener('mouseup', handleSliderMouseUp)
+  //     return () => {
+  //       document.removeEventListener('mousemove', handleSliderMouseMove)
+  //       document.removeEventListener('mouseup', handleSliderMouseUp)
+  //     }
+  //   }
+  // }, [isDragging, handleSliderMouseMove, handleSliderMouseUp])
   return (
     <Box
       width="100%"
@@ -112,19 +112,19 @@ const Skills = () => {
           in various areas of this field.
         </DescriptionTypography>
         <Stack 
-          ref={scrollContainerRef}
+          // ref={scrollContainerRef}
           width="100%" 
           spacing={2} 
           direction={isMobile ? 'column' : 'row'}
-          sx={{
-            overflowX: isMobile ? 'visible' : 'auto',
-            flexWrap: isMobile ? 'wrap' : 'nowrap',
-            '&::-webkit-scrollbar': {
-              display: 'none',
-            },
-            scrollbarWidth: 'none',
-            msOverflowStyle: 'none',
-          }}
+          // sx={{
+          //   overflowX: isMobile ? 'visible' : 'auto',
+          //   flexWrap: isMobile ? 'wrap' : 'nowrap',
+          //   '&::-webkit-scrollbar': {
+          //     display: 'none',
+          //   },
+          //   scrollbarWidth: 'none',
+          //   msOverflowStyle: 'none',
+          // }}
         >
           {Object.keys(UserProfile.skills).map((category, index) => (
             <SkillCategory
@@ -135,7 +135,7 @@ const Skills = () => {
           ))}
         </Stack>
         
-        {!isMobile && (
+        {/* {!isMobile && (
           <Box
             width="100%"
             display="flex"
@@ -180,7 +180,7 @@ const Skills = () => {
               />
             </Box>
           </Box>
-        )}
+        )} */}
       </Stack>
     </Box>
   )
