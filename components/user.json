@@ -69,6 +69,25 @@
       "github": "https://github.com/saikiransomanagoudar/gif-enigma"
     },
     {
+      "name": "ConvoOps",
+      "description": "ConvoOps turns meeting transcripts into real execution, it ingests a PDF transcript, uses an AI pipeline to classify context and extract key decisions, generates a prioritized action plan, and then lets a user review and approve actions before anything runs. Once approved, ConvoOps executes tasks across operational tools like GitHub, Gmail, Google Calendar, and Google Drive, and returns clear results with an audit trail, so teams can move from “we discussed it” to “it is done” in one streamlined flow.",
+      "code": "ImMWJ-bUZE8",
+      "techStack": [
+        "Python",
+        "FastAPI",
+        "LangGraph + LangChain",
+        "OpenAI models (gpt-4o, gpt-4o-mini)",
+        "MCP integrations via langchain-mcp-adapters",
+        "pdfplumber for transcript parsing",
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "React Router",
+        "React Markdown + remark-gfm"
+      ]
+    },
+    {
       "name": "Pantry Tracker",
       "description": "Pantry Tracker is an inventory management application that helps users to keep track of their pantry items. Users can add, update, delete, and search for items in their pantry. The app includes user authentication features, allowing multiple users to securely track and manage their pantry inventory.",
       "code": "srAL2mlq1Fo",
