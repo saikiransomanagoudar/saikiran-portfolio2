@@ -28,6 +28,17 @@
   ],
   "experience": [
     {
+      "title": "Software Engineering AI Trainer",
+      "company": "LinkedIn",
+      "location": "Remote",
+      "dates": "April 2026 - Present",
+      "responsibilities": [
+        "Designed and implemented multi-file coding tasks involving bug fixing, feature development, refactoring, and testing, simulating real-world software engineering scenarios",
+        "Wrote clear technical specifications and developed reference implementations, ensuring alignment between requirements, code behavior, and expected outputs",
+        "Built and extended unit and integration test suites, identified edge cases and failure modes, and performed peer reviews to improve code quality and correctness"
+      ]
+    },
+    {
       "title": "Software Engineer",
       "company": "CrowdDoing",
       "location": "Chicago, IL",
