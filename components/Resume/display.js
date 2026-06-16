@@ -47,7 +47,7 @@ const Display = () => {
       <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
         <Viewer
           theme={theme}
-          fileUrl="/resume-1.pdf"
+          fileUrl="/Saikiran_Somanagoudar_Resume.pdf"
           plugins={[toolbarPluginInstance]}
         />
       </Worker>
