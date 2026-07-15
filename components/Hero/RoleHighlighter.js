@@ -4,7 +4,7 @@ import {motion, AnimatePresence} from 'framer-motion'
 
 const roles = [
   'Software Engineer',
-  'Frontend Developer',
+  'Fullstack Developer',
   'AI & ML Integrator',
   'Cloud Practitioner',
 ]
