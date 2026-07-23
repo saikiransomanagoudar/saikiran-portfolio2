@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": "Saikiran Somanagoudar",
-    "description": "A software engineer with experience designing and delivering scalable web applications, cloud migrations, and front-end solutions. Dive into my journey where clean code meets creative problem solving.",
+    "description": "Software engineer specializing in full stack development with React, TypeScript, Node.js, and Python frameworks to deliver robust frontend and backend solutions.",
     "linkedin": "https://www.linkedin.com/in/saikiransomanagoudar/",
     "github": "https://github.com/saikiransomanagoudar",
     "devpost": "https://devpost.com/saikiransomanagoudar"
@@ -16,13 +16,13 @@
     {
       "schoolName": "Reva University",
       "major": "Bachelor of Technology (BTech) in Computer Science and Engineering",
-      "dates": "2015-2019",
+      "dates": "Jul 2015 - Aug 2019",
       "logo": "/reva.png"
     },
     {
       "schoolName": "Illinois Institute of Technology",
       "major": "Master's in Computer Science",
-      "dates": "2023-2025",
+      "dates": "Aug 2023 - Aug 2025",
       "logo": "/iltech.png"
     }
   ],
@@ -31,35 +31,33 @@
       "title": "Software Engineering AI Trainer",
       "company": "LinkedIn",
       "location": "Remote",
-      "dates": "April 2026 - Present",
+      "dates": "Apr 2026 - Present",
       "responsibilities": [
-        "Designed and implemented multi-file coding tasks involving bug fixing, feature development, refactoring, and testing, simulating real-world software engineering scenarios",
-        "Wrote clear technical specifications and developed reference implementations, ensuring alignment between requirements, code behavior, and expected outputs",
-        "Built and extended unit and integration test suites, identified edge cases and failure modes, and performed peer reviews to improve code quality and correctness"
+        "Designed and implemented multi-file JavaScript and TypeScript coding tasks including bug fixes, new features, refactoring, and unit tests using Git and Jenkins for version control and continuous integration, which helped trainees practice real-world frontend engineering and improved their code-quality confidence",
+        "Wrote detailed technical specifications and reference implementations, aligning requirements with code behavior and expected outputs while using Redux patterns like normalized state and immutable updates, which reduced specification misunderstandings and accelerated feature delivery"
       ]
     },
     {
       "title": "Software Engineer",
       "company": "CrowdDoing",
       "location": "Chicago, IL",
-      "dates": "October 2025 - April 2026",
+      "dates": "Oct 2025 - Apr 2026",
       "responsibilities": [
-        "Developed new interactive UI components and features for the AIME/Imagination Project web application using React, creating reusable component libraries that improved team workflow efficiency by 30%",
-        "Built responsive data visualization dashboards integrating Django backend APIs, implementing efficient state management and data fetching that reduced rendering time by 40% and enhanced user experience",
-        "Enhanced application performance by 25% through frontend optimization techniques including code splitting, lazy loading, and component rendering improvements while implementing automated testing pipelines and Docker-based CI/CD processes to ensure consistent quality standards"
+        "Built and shipped interactive, accessible UI components for the AIME/Imagination Project web application using React, Next.js, and TypeScript, creating reusable component libraries that improved team workflow efficiency by 30%",
+        "Developed responsive data visualization dashboards integrating backend REST APIs and GraphQL endpoints, implementing efficient state management with Context API, memoization, and data fetching that reduced rendering time by 40%",
+        "Improved application performance by 25% through code splitting, lazy loading, and component-level rendering optimizations, and implemented unit tests with Docker-driven CI/CD pipelines to maintain quality and cross-browser compatibility"
       ]
     },
     {
       "title": "Senior Software Engineer",
       "company": "Wipro Technologies",
       "location": "Bengaluru, India",
-      "dates": "September 2019 - June 2023",
+      "dates": "Sep 2019 - Jun 2023",
       "responsibilities": [
-        "Spearheaded the migration of 30+ client-facing applications to AWS hybrid cloud, optimizing responsive design and frontend performance to reduce downtime by 25% and enhance user experience across multiple platforms",
-        "Built and deployed interactive single-page application components using React with advanced state management and asynchronous process handling, reducing page load times by 15% and improving overall application performance",
-        "Integrated AI-powered AWS CodeGuru to automate CI/CD workflows and code review processes for multiple web applications, reducing manual intervention by 50% and improving deployment reliability",
-        "Engineered UI/UX enhancements for enterprise React web applications with server-side rendering implementation, optimizing component rendering efficiency, increasing average user session duration by 20% while reducing bounce rates",
-        "Collaborated with product stakeholders following agile methodologies to gather requirements and translate them into technical specifications, conducting comprehensive unit and integration tests while participating in code reviews to maintain quality standards"
+        "Spearheaded the migration of 30+ client-facing applications to AWS hybrid cloud and Kubernetes clusters, optimizing responsive design and frontend performance to reduce downtime by 25% and improve user experience across browsers and devices",
+        "Built interactive single-page components in React with TypeScript, using Redux for state management and async calls to RESTful APIs, implemented unit tests, and cut page load times by 15% while improving Core Web Vitals",
+        "Integrated AWS CodeGuru into CI/CD workflows and led code reviews across multiple web applications, reducing manual review effort by 50%, improving deployment reliability, and mentoring junior engineers on frontend best practices",
+        "Engineered UI/UX enhancements for enterprise React applications with server-side rendering and accessibility fixes, collaborating with product, design, and backend teams to consume RESTful APIs, which increased average session duration by 20%"
       ]
     }
   ],
@@ -68,6 +66,7 @@
       "name": "GIF Enigma",
       "description": "GIF Enigma is a word/phrase-guessing game built for Reddit community where players interpret GIFs to uncover a hidden word or phrase. A fun and engaging challenge that tests your ability to think visually and make connections.",
       "code": "iYpGLeuMv-w",
+      "dates": "Mar 2025 - Apr 2025",
       "techStack": [
         "React",
         "Devvit",
@@ -98,6 +97,7 @@
       "name": "ConvoOps",
       "description": "ConvoOps turns meeting transcripts into real execution, it ingests a PDF transcript, uses an AI pipeline to classify context and extract key decisions, generates a prioritized action plan, and then lets a user review and approve actions before anything runs. Once approved, ConvoOps executes tasks across operational tools like GitHub, Gmail, Google Calendar, and Google Drive, and returns clear results with an audit trail, so teams can move from “we discussed it” to “it is done” in one streamlined flow.",
       "code": "ImMWJ-bUZE8",
+      "dates": "Apr 2026 - Apr 2026",
       "techStack": [
         "Python",
         "FastAPI",
@@ -117,49 +117,55 @@
     
   ],
   "skills": {
-    "languages": [
+    "Programming Languages": [
       ["JavaScript", "100%"],
       ["TypeScript", "90%"],
       ["Python", "95%"],
-      ["Java", "90%"],
-      ["HTML", "100%"],
-      ["CSS", "100%"]
+      ["Java", "90%"]
     ],
-    "frontend": [
-      ["React.js", "100%"],
+    "Front-End & Frameworks": [
+      ["React", "100%"],
       ["Next.js", "90%"],
       ["Redux", "90%"],
-      ["Tailwind CSS", "100%"]
+      ["HTML", "100%"],
+      ["CSS", "100%"],
+      ["Tailwind CSS", "100%"],
+      ["Context API", "90%"]
     ],
-    "backend": [
+    "Back-End & Cloud": [
       ["Node.js", "100%"],
-      ["Django", "85%"],
+      ["Express", "90%"],
       ["Flask", "85%"],
       ["FastAPI", "90%"],
       ["RESTful APIs", "100%"],
-      ["GraphQL", "80%"]
-    ],
-    "databases": [
-      ["PostgreSQL", "85%"],
-      ["MySQL", "90%"],
-      ["MongoDB", "100%"],
-      ["Redis", "100%"]
-    ],
-    "cloud": [
+      ["GraphQL", "80%"],
       ["AWS", "82%"],
       ["Docker", "85%"],
-      ["Jenkins", "85%"],
       ["Kubernetes", "80%"],
-      ["Vercel", "100%"],
-      ["Heroku", "100%"]
+      ["Jenkins", "85%"]
     ],
-    "AI & Tools": [
-      ["Git", "100%"],
+    "Databases & Data Formats": [
+      ["SQL", "90%"],
+      ["MySQL", "90%"],
+      ["PostgreSQL", "85%"],
+      ["MongoDB", "100%"],
+      ["XML", "85%"],
+      ["JSON", "100%"]
+    ],
+    "Testing & Performance": [
       ["Jest", "85%"],
+      ["React Testing Library", "85%"],
+      ["Code splitting", "90%"],
+      ["Lazy loading", "90%"],
+      ["SSR", "90%"]
+    ],
+    "AI & Development Tools": [
       ["LangChain", "90%"],
-      ["NLTK", "85%"],
-      ["Matplotlib", "85%"],
-      ["NumPy", "95%"]
+      ["LangGraph", "90%"],
+      ["Git", "100%"],
+      ["JIRA", "85%"],
+      ["Agile/Scrum", "90%"],
+      ["CI/CD", "90%"]
     ]
   }
 }
