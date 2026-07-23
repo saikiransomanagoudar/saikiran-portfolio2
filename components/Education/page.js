@@ -22,28 +22,6 @@ const Education = () => {
     }
   }, [controls, inView])
 
-  // Modularized Education Descriptions
-  const EducationDescriptions = () => (
-    <Stack direction="column">
-      {[
-        'Master\'s in Computer Science',
-        'Frontend and Full Stack Web Development',
-      ].map((text, i) => (
-        <DescriptionTypography
-          key={i}
-          maxWidth="650px"
-          component={motion.div}
-          initial="hidden"
-          animate={controls}
-          variants={slideFromLeftVariants}
-          transition={{delay: 0.2}}
-        >
-          {text}
-        </DescriptionTypography>
-      ))}
-    </Stack>
-  )
-
   return (
     <Box
       width="100%"
@@ -71,7 +49,6 @@ const Education = () => {
         >
           Education
         </TitleTypography>
-        <EducationDescriptions />
         {!isMobile && <Timeline />}
         <Stack
           direction={isMobile ? 'column' : 'row'}
